@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              custom: "8px 8px 0px 0px #000000",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+        variants: {
+          extend: {
+            boxShadow: ["hover"],
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-[#141414]">
+    <div class="bg-[#1f1f1f] mx-auto my-[150px] p-[40px] flex flex-col items-center max-w-[440px] rounded-[10px]">
+      <img src="assets/images/avatar-jessica.jpeg" alt="" width="100" class="rounded-full">
+      <h1 class="mt-[40px] mb-[10px] text-white text-3xl font-[700]">Jessica Randall</h1>
+      <span class="text-sky-600 text-[14.4px]">London United Kingdom</span>
+      <p class="mt-[40px] mb-[30px] text-[#dfdede] text-[14.4px]">"Front-end developer and avid reader." </p> 
+      <ul class="list-none flex flex-col items-center gap-[20px]">
+        <li class="bg-[#333333] py-[20px] px-[110px] rounded-[10px] text-white w-full text-center font-[700] hover:bg-sky-600"><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li class="bg-[#333333] py-[20px] px-[110px] rounded-[10px] text-white w-full text-center font-[700] hover:bg-sky-600"><a href="www.frontendmentor.io" target="_blank">FrontendMentor</a></li>
+        <li class="bg-[#333333] py-[20px] px-[110px] rounded-[10px] text-white w-full text-center font-[700] hover:bg-sky-600"><a href="https://www.linkedin.com" target="_blank">Linkedln</a></li>
+        <li class="bg-[#333333] py-[20px] px-[110px] rounded-[10px] text-white w-full text-center font-[700] hover:bg-sky-600"><a href="https://x.com/home" target="_blank">Twitter</a></li>
+        <li class="bg-[#333333] py-[20px] px-[110px] rounded-[10px] text-white w-full text-center font-[700] hover:bg-sky-600"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+      </ul>  
+      
+    </div>
+
+  </body>
+</html>
